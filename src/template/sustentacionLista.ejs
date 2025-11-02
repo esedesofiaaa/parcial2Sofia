@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sustentaciones - Proyectos Integradores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body class="bg-light">
+  <!-- Cabecera -->
+  <header class="bg-success text-white py-4">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Todas las Sustentaciones</h1>
+      <p class="lead">Explora los proyectos integradores</p>
+    </div>
+  </header>
+
+  <!-- Menú -->
+  <%- include('menu') %>
+
+  <!-- Contenido Principal -->
+  <main class="container my-5">
+    <% if (searchQuery) { %>
+      <div class="alert alert-info mb-4">
+        <strong>Resultados para:</strong> "<%= searchQuery %>"
+        <a href="/sustentaciones" class="btn btn-sm btn-outline-secondary ms-2">Limpiar búsqueda</a>
+      </div>
+    <% } %>
+
+    <!-- Lista de Sustentaciones -->
+    <section>
+      <% if (sustentaciones.length === 0) { %>
+        <div class="alert alert-info text-center">
+          <h4>No se encontraron sustentaciones</h4>
+          <p>Intenta con otros términos de búsqueda</p>
+        </div>
+      <% } else { %>
+        <div class="row g-4">
+          <% sustentaciones.forEach(sustentacion => { %>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm hover-card">
+                <img src="/img/<%= sustentacion.imagen %>" class="card-img-top" alt="<%= sustentacion.nombreGrupo %>" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                  <% if (sustentacion.destacada) { %>
+                    <span class="badge bg-warning text-dark mb-2">Destacada</span>
+                  <% } %>
+                  <h5 class="card-title"><%= sustentacion.nombreGrupo %></h5>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <strong>Materia:</strong> <%= sustentacion.materia %>
+                    </small>
+                  </p>
+                  <p class="card-text text-truncate">
+                    <%= sustentacion.contenido.substring(0, 100) %>...
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <strong>Integrantes:</strong> <%= sustentacion.integrantes.length %>
+                    </small>
+                  </p>
+                  <a href="/sustentaciones/<%= sustentacion.id %>" class="btn btn-primary w-100">
+                    Ver Detalles
+                  </a>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      <% } %>
+    </section>
+
+    <!-- Paginación -->
+    <% if (totalPages > 1) { %>
+      <nav aria-label="Paginación de sustentaciones" class="mt-5">
+        <ul class="pagination justify-content-center">
+          <!-- Botón Anterior -->
+          <li class="page-item <%= currentPage === 1 ? 'disabled' : '' %>">
+            <a class="page-link" href="/sustentaciones?page=<%= currentPage - 1 %>" aria-label="Anterior">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          
+          <!-- Números de página -->
+          <% for(let i = 1; i <= totalPages; i++) { %>
+            <li class="page-item <%= currentPage === i ? 'active' : '' %>">
+              <a class="page-link" href="/sustentaciones?page=<%= i %>"><%= i %></a>
+            </li>
+          <% } %>
+          
+          <!-- Botón Siguiente -->
+          <li class="page-item <%= currentPage === totalPages ? 'disabled' : '' %>">
+            <a class="page-link" href="/sustentaciones?page=<%= currentPage + 1 %>" aria-label="Siguiente">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    <% } %>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 Proyectos Integradores - Universidad</p>
+      <p class="mb-0 small">Jornada de Sustentaciones Académicas</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .hover-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+    }
+  </style>
+</body>
+
+</html>

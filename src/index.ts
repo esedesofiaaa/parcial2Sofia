@@ -1,15 +1,29 @@
 import express, { Application } from 'express'
 import path from 'path'
 
+import SustentacionRouter from './sustentacion/router/SustentacionRouter'
+import SustentacionView from './sustentacion/view/SustentacionView'
+import SustentacionModel from './sustentacion/model/SustentacionModel'
+
+import DestacadasRouter from './destacadas/router/DestacadasRouter'
+import DestacadasView from './destacadas/view/DestacadasView'
+
+import HomeRouter from './home/router/HomeRouter'
+import HomeView from './home/view/HomeView'
+
+import RegistroRouter from './registro/router/RegistroRouter'
+
 import ErrorRouter from './error/router/ErrorRouter'
 import ErrorView from './error/view/ErrorView'
-
 
 export default class Server {
   private readonly app: Application
 
   constructor(
-    
+    private readonly sustentacionRouter: SustentacionRouter,
+    private readonly destacadasRouter: DestacadasRouter,
+    private readonly homeRouter: HomeRouter,
+    private readonly registroRouter: RegistroRouter,
     private readonly errorRouter: ErrorRouter
   ) {
     this.app = express()
@@ -26,7 +40,10 @@ export default class Server {
   }
 
   private readonly routes = (): void => {
-
+    this.app.use('/', this.homeRouter.router)
+    this.app.use('/sustentaciones', this.sustentacionRouter.router)
+    this.app.use('/destacadas', this.destacadasRouter.router)
+    this.app.use('/registro', this.registroRouter.router)
     this.app.use('/{*any}', this.errorRouter.router)
   }
 
@@ -43,8 +60,14 @@ export default class Server {
   }
 }
 
-const server = new Server(
+const sustentacionModel = new SustentacionModel()
+const sustentacionView = new SustentacionView(sustentacionModel)
 
+const server = new Server(
+  new SustentacionRouter(sustentacionView),
+  new DestacadasRouter(new DestacadasView(sustentacionModel)),
+  new HomeRouter(new HomeView()),
+  new RegistroRouter(sustentacionView),
   new ErrorRouter(new ErrorView())
 )
 server.start()

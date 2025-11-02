@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos Integradores - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body class="bg-light">
+  <!-- Cabecera -->
+  <header class="bg-primary text-white py-5">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold">Proyectos Integradores 2025</h1>
+      <p class="lead">Jornada de Sustentaciones de Proyectos</p>
+    </div>
+  </header>
+
+  <!-- Menú -->
+  <%- include('menu') %>
+
+  <!-- Contenido Principal -->
+  <main class="container my-5">
+    <!-- ¿Qué son Proyectos Integradores? -->
+    <section class="mb-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="card shadow-sm">
+            <div class="card-body p-4">
+              <h2 class="card-title text-primary mb-4">¿Qué son los Proyectos Integradores?</h2>
+              <p class="card-text">
+                Los Proyectos Integradores son trabajos académicos que permiten a los estudiantes aplicar los conocimientos 
+                adquiridos durante su formación universitaria en la solución de problemas reales. Estos proyectos fomentan 
+                el trabajo en equipo, la creatividad y la innovación tecnológica.
+              </p>
+              <p class="card-text">
+                En esta jornada, los grupos de estudiantes presentarán sus desarrollos en diversas áreas como Ingeniería 
+                de Software, Ciencia de Datos, Inteligencia Artificial, Seguridad Informática y más.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agenda de la Jornada -->
+    <section class="mb-5">
+      <h2 class="text-center text-primary mb-4">Agenda de la Jornada</h2>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead class="table-primary">
+                    <tr>
+                      <th>Horario</th>
+                      <th>Actividad</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>8:00 AM - 8:30 AM</td>
+                      <td>Registro e Inauguración</td>
+                      <td>Bienvenida y apertura oficial de la jornada</td>
+                    </tr>
+                    <tr>
+                      <td>8:30 AM - 10:30 AM</td>
+                      <td>Bloque 1: Sustentaciones</td>
+                      <td>Presentación de proyectos de Software y Web</td>
+                    </tr>
+                    <tr>
+                      <td>10:30 AM - 11:00 AM</td>
+                      <td>Coffee Break</td>
+                      <td>Receso y networking</td>
+                    </tr>
+                    <tr>
+                      <td>11:00 AM - 1:00 PM</td>
+                      <td>Bloque 2: Sustentaciones</td>
+                      <td>Proyectos de IA, Data Science y Cloud</td>
+                    </tr>
+                    <tr>
+                      <td>1:00 PM - 2:00 PM</td>
+                      <td>Almuerzo</td>
+                      <td>Receso para almorzar</td>
+                    </tr>
+                    <tr>
+                      <td>2:00 PM - 4:00 PM</td>
+                      <td>Bloque 3: Sustentaciones</td>
+                      <td>Proyectos de IoT, Blockchain y Videojuegos</td>
+                    </tr>
+                    <tr>
+                      <td>4:00 PM - 5:00 PM</td>
+                      <td>Premiación y Clausura</td>
+                      <td>Reconocimiento a los mejores proyectos</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Botones de Navegación Rápida -->
+    <section class="mb-5">
+      <h2 class="text-center text-primary mb-4">Navegación Rápida</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-body text-center">
+              <div class="display-4 mb-3"></div>
+              <h5 class="card-title">Todas las Sustentaciones</h5>
+              <p class="card-text">Explora todos los proyectos presentados en la jornada</p>
+              <a href="/sustentaciones" class="btn btn-primary">Ver Sustentaciones</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-body text-center">
+              <div class="display-4 mb-3"></div>
+              <h5 class="card-title">Proyectos Destacados</h5>
+              <p class="card-text">Descubre los proyectos más relevantes e innovadores</p>
+              <a href="/destacadas" class="btn btn-warning">Ver Destacadas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-body text-center">
+              <div class="display-4 mb-3"></div>
+              <h5 class="card-title">Registrar Proyecto</h5>
+              <p class="card-text">¿Tienes un proyecto? Regístralo aquí</p>
+              <a href="/registro" class="btn btn-success">Registrar Ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 Proyectos Integradores - Universidad</p>
+      <p class="mb-0 small">Jornada de Sustentaciones Académicas</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .hover-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+    }
+  </style>
+</body>
+
+</html>

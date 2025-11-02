@@ -1,0 +1,143 @@
+[
+  {
+    "id": 1,
+    "imagen": "1.png",
+    "nombreGrupo": "Innovadores Digitales",
+    "integrantes": [
+      "María González",
+      "Carlos Ruiz",
+      "Ana López"
+    ],
+    "materia": "Ingeniería de Software",
+    "contenido": "Desarrollo de una aplicación móvil para gestión académica utilizando React Native y Node.js. El proyecto incluye autenticación, gestión de horarios, calificaciones y comunicación entre estudiantes y profesores.",
+    "destacada": true
+  },
+  {
+    "id": 2,
+    "imagen": "2.jpeg",
+    "nombreGrupo": "Data Science Team",
+    "integrantes": [
+      "Pedro Martínez",
+      "Laura Silva",
+      "Diego Herrera"
+    ],
+    "materia": "Ciencia de Datos",
+    "contenido": "Análisis predictivo de tendencias de mercado usando Machine Learning. Implementación de algoritmos de clasificación y regresión para predecir comportamiento de ventas en e-commerce.",
+    "destacada": false
+  },
+  {
+    "id": 3,
+    "imagen": "3.png",
+    "nombreGrupo": "Cyber Security Squad",
+    "integrantes": [
+      "Andrea Morales",
+      "Juan Pérez",
+      "Sofía Castillo"
+    ],
+    "materia": "Seguridad Informática",
+    "contenido": "Sistema de detección de intrusiones en redes corporativas. Desarrollo de herramientas de monitoreo en tiempo real y análisis de vulnerabilidades usando Python y tecnologías de red.",
+    "destacada": true
+  },
+  {
+    "id": 4,
+    "imagen": "4.jpeg",
+    "nombreGrupo": "Web Developers",
+    "integrantes": [
+      "Roberto García",
+      "Camila Torres",
+      "Fernando Vega"
+    ],
+    "materia": "Desarrollo Web",
+    "contenido": "Plataforma de e-learning interactiva con gamificación. Frontend desarrollado en Vue.js y backend en Express.js, incluye sistema de badges, rankings y evaluaciones automáticas.",
+    "destacada": false
+  },
+  {
+    "id": 5,
+    "imagen": "5.jpeg",
+    "nombreGrupo": "AI Researchers",
+    "integrantes": [
+      "Valentina Rojas",
+      "Alejandro Cruz",
+      "Isabella Méndez"
+    ],
+    "materia": "Inteligencia Artificial",
+    "contenido": "Chatbot inteligente para atención al cliente usando NLP. Implementación con TensorFlow y procesamiento de lenguaje natural para automatizar respuestas y mejorar la experiencia del usuario.",
+    "destacada": true
+  },
+  {
+    "id": 6,
+    "imagen": "6.jpeg",
+    "nombreGrupo": "Mobile Innovators",
+    "integrantes": [
+      "Gabriel Ramírez",
+      "Natalia Flores",
+      "Sebastián Díaz"
+    ],
+    "materia": "Desarrollo Móvil",
+    "contenido": "Aplicación de realidad aumentada para educación. Desarrollo en Unity y ARCore para crear experiencias inmersivas de aprendizaje en materias como anatomía y química.",
+    "destacada": false
+  },
+  {
+    "id": 7,
+    "imagen": "7.png",
+    "nombreGrupo": "Cloud Computing",
+    "integrantes": [
+      "Daniela Vargas",
+      "Mateo Jiménez",
+      "Lucía Herrera"
+    ],
+    "materia": "Computación en la Nube",
+    "contenido": "Migración de infraestructura empresarial a AWS. Diseño de arquitectura escalable usando microservicios, contenedores Docker y orquestación con Kubernetes.",
+    "destacada": false
+  },
+  {
+    "id": 8,
+    "imagen": "8.jpeg",
+    "nombreGrupo": "Blockchain Developers",
+    "integrantes": [
+      "Andrés Castro",
+      "Paola Moreno",
+      "Nicolás Rivera"
+    ],
+    "materia": "Tecnologías Emergentes",
+    "contenido": "Sistema de votación electrónica basado en blockchain. Implementación en Ethereum con smart contracts para garantizar transparencia y seguridad en procesos electorales.",
+    "destacada": true
+  },
+  {
+    "id": 9,
+    "imagen": "9.jpeg",
+    "nombreGrupo": "IoT Solutions",
+    "integrantes": [
+      "Melissa Ortega",
+      "David Sánchez",
+      "Carolina López"
+    ],
+    "materia": "Internet de las Cosas",
+    "contenido": "Sistema de automatización doméstica inteligente. Desarrollo de red de sensores IoT con Arduino y Raspberry Pi para control de iluminación, temperatura y seguridad.",
+    "destacada": false
+  },
+  {
+    "id": 10,
+    "imagen": "10.jpeg",
+    "nombreGrupo": "Game Developers",
+    "integrantes": [
+      "Francisco Mejía",
+      "Valeria Aguilar",
+      "Tomás Restrepo"
+    ],
+    "materia": "Desarrollo de Videojuegos",
+    "contenido": "Videojuego educativo multiplataforma sobre historia colombiana. Desarrollo en Unity con mecánicas de aventura y elementos pedagógicos para enseñanza de historia nacional.",
+    "destacada": false
+  },
+  {
+    "id": 11,
+    "imagen": "error.png",
+    "nombreGrupo": "perrito123",
+    "integrantes": [
+      "pepito peres\r\njuanito alima;a\r\nmaria jose alberto"
+    ],
+    "materia": "proyecto integrador 1",
+    "contenido": "sssvfrkgnrkbn re ekgvrekn gltb ngltgnrtlbnrl envkrevden knfe\r\n\r\nvrkngroihrogjort\r\nfcelgnvrigonv onv eorv",
+    "destacada": true
+  }
+]

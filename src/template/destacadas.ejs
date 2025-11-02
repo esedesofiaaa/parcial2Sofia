@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sustentaciones Destacadas - Proyectos Integradores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body class="bg-light">
+  <!-- Cabecera -->
+  <header class="bg-warning text-dark py-4">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Sustentaciones Destacadas</h1>
+      <p class="lead">Los proyectos más relevantes e innovadores</p>
+    </div>
+  </header>
+
+  <!-- Menú -->
+  <%- include('menu') %>
+
+  <!-- Contenido Principal -->
+  <main class="container my-5">
+    <% if (destacadas.length === 0) { %>
+      <div class="alert alert-warning text-center">
+        <h4>No hay sustentaciones destacadas en este momento</h4>
+        <p>Vuelve pronto para descubrir los proyectos más relevantes</p>
+        <a href="/sustentaciones" class="btn btn-primary mt-3">Ver Todas las Sustentaciones</a>
+      </div>
+    <% } else { %>
+      <!-- Descripción -->
+      <section class="mb-5">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="alert alert-warning text-center">
+              <p class="mb-0">
+                <strong>¡Estos son los <%= destacadas.length %> proyectos seleccionados como destacados!</strong> 
+                Haz clic en cualquier proyecto para ver todos los detalles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Grid de Proyectos Destacados -->
+      <section>
+        <div class="row g-4">
+          <% destacadas.forEach((sustentacion, index) => { %>
+            <div class="col-md-6 col-lg-6">
+              <div class="card h-100 shadow hover-card border-warning">
+                <div class="position-relative">
+                  <img src="/img/<%= sustentacion.imagen %>" class="card-img-top" 
+                    alt="<%= sustentacion.nombreGrupo %>" style="height: 300px; object-fit: cover;">
+                  <span class="position-absolute top-0 start-0 m-3">
+                    <span class="badge bg-warning text-dark fs-5">#<%= index + 1 %></span>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title text-warning">
+                    <%= sustentacion.nombreGrupo %>
+                  </h4>
+                  <p class="card-text">
+                    <span class="badge bg-primary mb-2"><%= sustentacion.materia %></span>
+                  </p>
+                  <p class="card-text">
+                    <%= sustentacion.contenido.substring(0, 150) %>...
+                  </p>
+                  <div class="mb-3">
+                    <small class="text-muted">
+                      <strong>Integrantes:</strong>
+                    </small>
+                    <ul class="list-unstyled small">
+                      <% sustentacion.integrantes.forEach(integrante => { %>
+                        <li><%= integrante %></li>
+                      <% }) %>
+                    </ul>
+                  </div>
+                  <a href="/sustentaciones/<%= sustentacion.id %>" class="btn btn-warning w-100 fw-bold">
+                    Ver Proyecto Completo
+                  </a>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      </section>
+
+      <!-- Botón para ver todas -->
+      <section class="mt-5 text-center">
+        <a href="/sustentaciones" class="btn btn-primary btn-lg">
+          Ver Todas las Sustentaciones
+        </a>
+      </section>
+    <% } %>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 Proyectos Integradores - Universidad</p>
+      <p class="mb-0 small">Jornada de Sustentaciones Académicas</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .hover-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3) !important;
+    }
+  </style>
+</body>
+
+</html>

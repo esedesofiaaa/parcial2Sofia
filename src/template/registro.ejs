@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrar Sustentación - Proyectos Integradores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body class="bg-light">
+  <!-- Cabecera -->
+  <header class="bg-success text-white py-4">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Registrar Nueva Sustentación</h1>
+      <p class="lead">Agrega tu proyecto integrador</p>
+    </div>
+  </header>
+
+  <!-- Menú -->
+  <%- include('menu') %>
+
+  <!-- Contenido Principal -->
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="card shadow-sm">
+          <div class="card-body p-4">
+            <h4 class="card-title mb-4">Formulario de Registro</h4>
+            <p class="text-muted mb-4">Complete la información de su proyecto integrador</p>
+
+            <form method="POST" action="/registro" class="needs-validation" novalidate>
+              <!-- Nombre del Grupo -->
+              <div class="mb-3">
+                <label for="nombreGrupo" class="form-label fw-bold">Nombre del Grupo *</label>
+                <input type="text" class="form-control" id="nombreGrupo" name="nombreGrupo" 
+                  placeholder="Ej: Innovadores Digitales" required minlength="3">
+                <div class="invalid-feedback">
+                  Por favor ingrese el nombre del grupo (mínimo 3 caracteres)
+                </div>
+              </div>
+
+              <!-- Materia -->
+              <div class="mb-3">
+                <label for="materia" class="form-label fw-bold">Materia *</label>
+                <input type="text" class="form-control" id="materia" name="materia" 
+                  placeholder="Ej: Ingeniería de Software" required minlength="3">
+                <div class="invalid-feedback">
+                  Por favor ingrese la materia
+                </div>
+              </div>
+
+              <!-- Integrantes -->
+              <div class="mb-3">
+                <label for="integrantes" class="form-label fw-bold">Integrantes *</label>
+                <textarea class="form-control" id="integrantes" name="integrantes" rows="3" 
+                  placeholder="Separe los nombres con comas. Ej: Juan Pérez, María García, Carlos López" 
+                  required></textarea>
+                <small class="form-text text-muted">Separe cada nombre con coma (,)</small>
+                <div class="invalid-feedback">
+                  Por favor ingrese los integrantes del grupo
+                </div>
+              </div>
+
+              <!-- Contenido/Descripción -->
+              <div class="mb-3">
+                <label for="contenido" class="form-label fw-bold">Descripción del Proyecto *</label>
+                <textarea class="form-control" id="contenido" name="contenido" rows="5" 
+                  placeholder="Describa el proyecto, objetivos, tecnologías utilizadas, etc." 
+                  required minlength="50"></textarea>
+                <small class="form-text text-muted">Mínimo 50 caracteres</small>
+                <div class="invalid-feedback">
+                  Por favor ingrese una descripción detallada (mínimo 50 caracteres)
+                </div>
+              </div>
+
+              <!-- Imagen -->
+              <div class="mb-3">
+                <label for="imagen" class="form-label fw-bold">Imagen del Proyecto</label>
+                <input type="text" class="form-control" id="imagen" name="imagen" 
+                  placeholder="Ej: 1.png, 2.jpeg (debe estar en /public/img/)">
+                <small class="form-text text-muted">Opcional: Nombre del archivo de imagen (si no se especifica, se usará una imagen por defecto)</small>
+              </div>
+
+              <!-- Destacada -->
+              <div class="mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="true" id="destacada" name="destacada">
+                  <label class="form-check-label fw-bold" for="destacada">
+                    Marcar como Destacada
+                  </label>
+                  <small class="form-text text-muted d-block">
+                    Los proyectos destacados aparecerán en la página de "Sustentaciones Destacadas"
+                  </small>
+                </div>
+              </div>
+
+              <!-- Botones -->
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-success btn-lg">
+                  Registrar Sustentación
+                </button>
+                <a href="/sustentaciones" class="btn btn-outline-secondary">
+                  Cancelar
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Información adicional -->
+        <div class="alert alert-info mt-4">
+          <strong>Nota:</strong> Una vez registrada, la sustentación aparecerá en la lista principal y podrá ser vista por todos los usuarios.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 Proyectos Integradores - Universidad</p>
+      <p class="mb-0 small">Jornada de Sustentaciones Académicas</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Validación de Bootstrap
+    (function() {
+      'use strict';
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(function(form) {
+        form.addEventListener('submit', function(event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+</body>
+
+</html>
