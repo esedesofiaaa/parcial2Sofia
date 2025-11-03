@@ -92,6 +92,19 @@ export default class SustentacionView {
     }
   }
 
+  readonly getDestacadas = async (_req: Request, res: Response) => {
+    try {
+      const destacadas = await this.sustentacionModel.fetchDestacadas()
+      
+      res.status(200).render('destacadas', { destacadas, currentPageName: 'destacadas' })
+    } catch (error) {
+      res.status(500).render('error', { 
+        message: 'Error al cargar sustentaciones destacadas',
+        currentPageName: 'destacadas'
+      })
+    }
+  }
+
   readonly getRegistroForm = async (_req: Request, res: Response) => {
     res.status(200).render('registro', { currentPageName: 'registro' })
   }

@@ -15,10 +15,10 @@
           <a class="nav-link <%= (typeof currentPageName !== 'undefined' && currentPageName === 'sustentaciones') || (typeof currentPage !== 'undefined' && currentPage === 'sustentaciones') ? 'active' : '' %>" href="/sustentaciones">Sustentaciones</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <%= (typeof currentPageName !== 'undefined' && currentPageName === 'destacadas') || (typeof currentPage !== 'undefined' && currentPage === 'destacadas') ? 'active' : '' %>" href="/destacadas">Destacadas</a>
+          <a class="nav-link <%= (typeof currentPageName !== 'undefined' && currentPageName === 'destacadas') || (typeof currentPage !== 'undefined' && currentPage === 'destacadas') ? 'active' : '' %>" href="/sustentaciones/destacadas">Destacadas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <%= (typeof currentPageName !== 'undefined' && currentPageName === 'registro') || (typeof currentPage !== 'undefined' && currentPage === 'registro') ? 'active' : '' %>" href="/registro">Registro</a>
+          <a class="nav-link <%= (typeof currentPageName !== 'undefined' && currentPageName === 'registro') || (typeof currentPage !== 'undefined' && currentPage === 'registro') ? 'active' : '' %>" href="/sustentaciones/registro">Registro</a>
         </li>
       </ul>
       <form class="d-flex" role="search" method="POST" action="/sustentaciones/search">
