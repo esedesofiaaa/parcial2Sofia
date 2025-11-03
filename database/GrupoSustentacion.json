@@ -1,145 +1,199 @@
 [
   {
     "id": 1,
-    "imagen": "1.png",
-    "nombreGrupo": "Innovadores Digitales",
+    "imagen": "1.jpeg",
+    "nombreGrupo": "VIZLA",
     "integrantes": [
-      "María González",
-      "Carlos Ruiz",
-      "Ana López"
+      "Aguilar Latorre Daniel Felipe",
+      "Bravo Vergara Pablo Antonio",
+      "Gomez Cadena Santiago",
+      "Hernandez Carranza David Ricardo",
+      "Ortiz Vargas Carlos Fernando",
+      "Pico Garcia Andres Felipe"
     ],
-    "materia": "Ingeniería de Software",
-    "contenido": "Desarrollo de una aplicación móvil para gestión académica utilizando React Native y Node.js. El proyecto incluye autenticación, gestión de horarios, calificaciones y comunicación entre estudiantes y profesores.",
-    "destacada": true
+    "materia": "Proyecto Integrador II",
+    "descripcion": "El equipo Vizla presentó el módulo de usuarios para el juego Nexus Battles IV, sin embargo no tenian producto que sustentara el proyecto y en las conclusiones explicaron el porque no lograron terminarlo",
+    "contenido": "Expusieron solo tres compañeros, hablaron acerca de las notificaciones por correo electrónico, usaron scrum. El docente Briceño pregunto por los pilares de scrum, pregunta también porque no hay producto, a lo que respondieron que por inconvenientes y falta de comunicación",
+    "destacada": false
   },
   {
     "id": 2,
     "imagen": "2.jpeg",
-    "nombreGrupo": "Data Science Team",
+    "nombreGrupo": "ELDAR",
     "integrantes": [
-      "Pedro Martínez",
-      "Laura Silva",
-      "Diego Herrera"
+      "Espinel Dominguez Pedro Mateo",
+      "Gutierrez Mejia Daniel Felipe",
+      "Moreno Velandia Diego Alejandro",
+      "Rincon Ramirez Lenny Alejandro",
+      "Salcedo Hernandez Brenda Luz",
+      "Suarez Mendoza Diego Alejandro"
     ],
-    "materia": "Ciencia de Datos",
-    "contenido": "Análisis predictivo de tendencias de mercado usando Machine Learning. Implementación de algoritmos de clasificación y regresión para predecir comportamiento de ventas en e-commerce.",
+    "materia": "Proyecto Integrador II",
+    "descripcion": "El grupo Eldar expuso el módulo de inventario y la interfaz del juego Nexus Battles IV, presentaron evidencia de su producto y explicaron de forma clara las funcionalidades",
+    "contenido": "La profesora Danith preguntó sobre los puntos tan altos de cada sprint con puntos muy altos, pidió que explicaran  como fue el despliegue en CI/CD si no hay GitFlow o ramas, a lo que respondieron que frente a los puntos, si  se les fue la mano y estimaron mal y no hay CI/CD porque no hay commits automatizados. El profesor Lenin hizo apuntes sobre los diagramas, pues no respetaron la sintaxis UML, a lo que respondieron que los diagramas estan en drawio ya que no tenian conocimiento de autocat y recurrieron a la anterior plataforma por facilidad.",
     "destacada": false
   },
   {
     "id": 3,
-    "imagen": "3.png",
-    "nombreGrupo": "Cyber Security Squad",
+    "imagen": "3.jpeg",
+    "nombreGrupo": "KRYZE",
     "integrantes": [
-      "Andrea Morales",
-      "Juan Pérez",
-      "Sofía Castillo"
+      "Blandon Ardila Ruben Santiago",
+      "Carvajal Giraldo Juan Pablo",
+      "Falon Palmezano Jesus David",
+      "Fuentes Patiño Juan David",
+      "Leguizamo Vasquez Jose Daniel",
+      "Rodriguez Forero Camilo Andres"
     ],
-    "materia": "Seguridad Informática",
-    "contenido": "Sistema de detección de intrusiones en redes corporativas. Desarrollo de herramientas de monitoreo en tiempo real y análisis de vulnerabilidades usando Python y tecnologías de red.",
-    "destacada": true
+    "materia": "Proyecto Integrador II",
+    "descripcion": "El grupo Kryze presentó el desarrollo del juego para Nexus Battles IV. Explicaron como funcionan las mecánicas del juego y mostraron evidencia del producto.",
+    "contenido": "que pruebas hacen en el proyecto y como es la protección de datos, fueron preguntas de la profesora Danith, y el profesor Lenin preguntó porqué  son importantes los calculos de efectos aleatorios en el negocio.",
+    "destacada": false
   },
   {
     "id": 4,
     "imagen": "4.jpeg",
-    "nombreGrupo": "Web Developers",
+    "nombreGrupo": "ROOK",
     "integrantes": [
-      "Roberto García",
-      "Camila Torres",
-      "Fernando Vega"
+      "Benitez Pajaro Juan Eduardo",
+      "Castellanos Rincon Santiago",
+      "Fuentes Romero Luis Alfredo",
+      "Lizarazo Ortiz Karen Nicol Dayanna",
+      "Sanabria Gutierrez William Oswaldo",
+      "Toledo De La Cruz Gian Kieffer"
     ],
-    "materia": "Desarrollo Web",
-    "contenido": "Plataforma de e-learning interactiva con gamificación. Frontend desarrollado en Vue.js y backend en Express.js, incluye sistema de badges, rankings y evaluaciones automáticas.",
+    "materia": "Proyecto Integrador II",
+    "descripcion": "El grupo Rook expuso los módulos de torneo y subastas del proyecto Nexus Battles IV. Presentaron evidencia del producto y explicaron las funcionalidades de cada módulo.",
+    "contenido": "Con que se entreno el chat bot(herramientas)?Con cuantas capas ?Donde se hizo el entrenamiento? Cuál sería la precisión ?Redes neuronales?Lenin preguntó Lenin  porqué se escogió ese diseño y que hablen sobre la arquitectura.",
     "destacada": false
   },
   {
     "id": 5,
     "imagen": "5.jpeg",
-    "nombreGrupo": "AI Researchers",
+    "nombreGrupo": "WREN",
     "integrantes": [
-      "Valentina Rojas",
-      "Alejandro Cruz",
-      "Isabella Méndez"
+      "Espitia Bueno Julian Alberto",
+      "Florez Julio Jeison Steven",
+      "Hallado Abaunza Raul Santiago",
+      "Nuñez Rincon Sergio Eliecer",
+      "Rodriguez Castro Johan David",
+      "Urqudio Bautista Joseph Camilo"
     ],
-    "materia": "Inteligencia Artificial",
-    "contenido": "Chatbot inteligente para atención al cliente usando NLP. Implementación con TensorFlow y procesamiento de lenguaje natural para automatizar respuestas y mejorar la experiencia del usuario.",
-    "destacada": true
+    "materia": "Proyecto Integrador II",
+    "descripcion": "El grupo Wren presentó la inteligencia artificial para las batallas de Nexus Battles IV. Explicaron el funcionamiento de la IA y pero la evidencia evidencia del producto no fue clara y ni convincente.",
+    "contenido": "Profesora Danith: confusion sobre las gráficas de sprint, es burnt up o down? Profe Lenin: cómo decide la IA a quien atacar?",
+    "destacada": false
   },
   {
     "id": 6,
     "imagen": "6.jpeg",
-    "nombreGrupo": "Mobile Innovators",
+    "nombreGrupo": "ARRYN",
     "integrantes": [
-      "Gabriel Ramírez",
-      "Natalia Flores",
-      "Sebastián Díaz"
+      "Juan Camilo Gomez Manotas",
+      "Juan David Monsalve Niño",
+      "Nicolas Rodriguez Acevedo",
+      "Sofia Santis Silva",
+      "Tomas Uribe Sanchez"
     ],
-    "materia": "Desarrollo Móvil",
-    "contenido": "Aplicación de realidad aumentada para educación. Desarrollo en Unity y ARCore para crear experiencias inmersivas de aprendizaje en materias como anatomía y química.",
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Marketplace que centraliza productos de éxito, Alkosto y Falabella en una sola plataforma.",
+    "contenido": "Profesor Lenin: No hay marco conceptual y por eso puede hacer miles de preguntas porque no esta claro. el profesor Briceño: Preguntó por la en general que es el proyecto porque tampoco quedó claro a lo que respondieron explicando quye es un marketplace que centraliza los productos de exito, alkosto y fallabela en una sola plataforma. Preguntó también por la arquitectura y que tecnologías usaron a lo que respondieron que usaron microservicios con nodejs y express, base de datos no relacional mongoDB y front en react. Preguntó por qué no usaron base de datos relacional a lo que respondieron que por la facilidad de escalabilidad y flexibilidad para el tipo de proyecto. Preguntó por qué no usaron docker para los microservicios a lo que respondieron que no tuvieron tiempo de implementarlo.",
     "destacada": false
   },
   {
     "id": 7,
-    "imagen": "7.png",
-    "nombreGrupo": "Cloud Computing",
+    "imagen": "7.jpeg",
+    "nombreGrupo": "BARATHEON",
     "integrantes": [
-      "Daniela Vargas",
-      "Mateo Jiménez",
-      "Lucía Herrera"
+      "Fernando Cancelado Figueroa",
+      "Zarhet Valentina Fuentes Bottia",
+      "Nicolas Garcia Mejia",
+      "Jan Dante Leal Arenas",
+      "Bryan Gonzalo Lizcano Duran"
     ],
-    "materia": "Computación en la Nube",
-    "contenido": "Migración de infraestructura empresarial a AWS. Diseño de arquitectura escalable usando microservicios, contenedores Docker y orquestación con Kubernetes.",
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Plataforma que centraliza información de conciertos y eventos de distintas ciudades de Colombia.",
+    "contenido": "El profesor Briceño preguntó que es CRM y ERP, y el profesor Briceño preguntó por cuántas redes neuronales habian y cuántos nodos. Tuvieron inconvenientes con el video, pero pudieron solventarlo y continuar con la presentación.",
     "destacada": false
   },
   {
     "id": 8,
     "imagen": "8.jpeg",
-    "nombreGrupo": "Blockchain Developers",
+    "nombreGrupo": "LANNISTER",
     "integrantes": [
-      "Andrés Castro",
-      "Paola Moreno",
-      "Nicolás Rivera"
+      "Samuel Arango Diaz",
+      "Juan Manuel Guerrero Rueda",
+      "Wilson Andres Moreno Velandia",
+      "Nestor Stiven Pabon Florez",
+      "Sergio Alejandro Sanabria Moreno"
     ],
-    "materia": "Tecnologías Emergentes",
-    "contenido": "Sistema de votación electrónica basado en blockchain. Implementación en Ethereum con smart contracts para garantizar transparencia y seguridad en procesos electorales.",
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Plataforma sobre noticias de diferentes tipos y periódicos integrada con inteligencia artificial para recomendaciones personalizadas.",
+    "contenido": "Recibieron felicitaciones por la ejecución y presentación, estaba bien hecha.",
     "destacada": true
   },
   {
     "id": 9,
     "imagen": "9.jpeg",
-    "nombreGrupo": "IoT Solutions",
+    "nombreGrupo": "STARK",
     "integrantes": [
-      "Melissa Ortega",
-      "David Sánchez",
-      "Carolina López"
+      "Juan Sebastian Granados Jaimes",
+      "Juan Carlos Niño Osorio",
+      "Leyder Steven Ortiz Jaimes",
+      "Jorge Luis Osorio Silva",
+      "Carlos Alberto Quintero Arias"
     ],
-    "materia": "Internet de las Cosas",
-    "contenido": "Sistema de automatización doméstica inteligente. Desarrollo de red de sensores IoT con Arduino y Raspberry Pi para control de iluminación, temperatura y seguridad.",
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Plataforma de noticias sobre trading, precios de monedas y estado de mercados integrada con inteligencia artificial para recomendaciones personalizadas.",
+    "contenido": "",
     "destacada": false
   },
   {
     "id": 10,
     "imagen": "10.jpeg",
-    "nombreGrupo": "Game Developers",
+    "nombreGrupo": "TARGERYEN",
     "integrantes": [
-      "Francisco Mejía",
-      "Valeria Aguilar",
-      "Tomás Restrepo"
+      "Juan Andres Contreras Hernandez",
+      "Karol Nicol Dayanna Lizarazo Ortiz",
+      "Raul Ferney Lozano Navarro",
+      "Maria Angelica Parra Grazt",
+      "Jerson Arley Porras Lozano"
     ],
-    "materia": "Desarrollo de Videojuegos",
-    "contenido": "Videojuego educativo multiplataforma sobre historia colombiana. Desarrollo en Unity con mecánicas de aventura y elementos pedagógicos para enseñanza de historia nacional.",
-    "destacada": false
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Plataforma que recopila información sobre cursos y permite crear un path personalizado según el tema del que se desea aprender, este path es creado por un modelo de IA.",
+    "contenido": "El profesor Lenin hizo preguntas sobre la arquitectura y el costo de las lambdas y porqué no usar instancias EC2, también sobre la referencia al estudio que corroborara el porqué escogieron esos colores para la plataforma, y también sobre cuántos puntos habían en total en los tres sprints",
+    "destacada": true
   },
   {
     "id": 11,
-    "imagen": "error.png",
-    "nombreGrupo": "perrito123",
+    "imagen": "11.jpeg",
+    "nombreGrupo": "TYRELL",
     "integrantes": [
-      "pepito peres",
-      "juanito alima;a",
-      "maria jose alberto"
+      "Daniel Felipe Aguilar Latorre",
+      "Cristian Andres Gomez Jaimes",
+      "Cristian Camilo Plata Rodriguez",
+      "Rober Julian Quintero Oviedo",
+      "Juan Pablo Silva Vasquez"
     ],
-    "materia": "proyecto integrador 1",
-    "contenido": "sssvfrkgnrkbn re ekgvrekn gltb ngltgnrtlbnrl envkrevden knfe\r\n\r\nvrkngroihrogjort\r\nfcelgnvrigonv onv eorv",
-    "destacada": true
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Plataforma sobre productos de alkosto integrada con IA",
+    "contenido": "Un estudiante hizo un comentario con actitud petulante e imprudente sobre porque solo manejaban productos de una plataforma y no de otras, a lo que uno de los miembros respondio tambien de forma jocosa perdiendo la formalidad de la presentación. El profesor Lenin mostró su molesta por la actitud del estudiante y pidió mantener la formalidad en la presentación.",
+    "destacada": false
+  },
+  {
+    "id": 12,
+    "imagen": "WhatsApp Image 2025-11-02 at 22.18.27-1762139927828-813674903.jpeg",
+    "nombreGrupo": "Equipo 1",
+    "integrantes": [
+      "ANGEL LEONARDO LAGOS SALAMANCA",
+      "XANDER SEBASTIAN PINEDA LARROTA",
+      "JULIAN MATEO SIERRA VARGAS",
+      "SANTIAGO PRADA PINILLA",
+      "ALEXANDER GOMEZ GRAJALES."
+    ],
+    "materia": "Estructura de datos",
+    "descripcion": "El equipo presentó un sistema para gestionar trenes de pasajeros, recorriendo las funciones esenciales como registro de rutas, programación y asignación. Leyeron exageradamente el texto de las diapositivas, lo cual demostro poco dominio de los temas y el proyecto en general.",
+    "contenido": "No hubo marco conceptual y las diapositivas estaban en desorden",
+    "destacada": false
   }
 ]

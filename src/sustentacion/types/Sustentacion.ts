@@ -5,5 +5,6 @@ export default interface Sustentacion {
   integrantes: string[]
   materia: string
   contenido: string
+  descripcion: string
   destacada?: boolean
 }

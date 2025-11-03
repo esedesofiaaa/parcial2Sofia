@@ -31,7 +31,7 @@
             <h4 class="card-title mb-4">Formulario de Registro</h4>
             <p class="text-muted mb-4">Complete la información de su proyecto integrador</p>
 
-            <form method="POST" action="/registro" class="needs-validation" novalidate>
+            <form method="POST" action="/registro" enctype="multipart/form-data" class="needs-validation" novalidate>
               <!-- Nombre del Grupo -->
               <div class="mb-3">
                 <label for="nombreGrupo" class="form-label fw-bold">Nombre del Grupo *</label>
@@ -64,24 +64,34 @@
                 </div>
               </div>
 
-              <!-- Contenido/Descripción -->
+              <!-- Descripción del Proyecto -->
               <div class="mb-3">
-                <label for="contenido" class="form-label fw-bold">Descripción del Proyecto *</label>
-                <textarea class="form-control" id="contenido" name="contenido" rows="5" 
+                <label for="descripcion" class="form-label fw-bold">Descripción del Proyecto *</label>
+                <textarea class="form-control" id="descripcion" name="descripcion" rows="4" 
                   placeholder="Describa el proyecto, objetivos, tecnologías utilizadas, etc." 
-                  required minlength="50"></textarea>
-                <small class="form-text text-muted">Mínimo 50 caracteres</small>
+                  required minlength="30"></textarea>
+                <small class="form-text text-muted">Mínimo 30 caracteres</small>
                 <div class="invalid-feedback">
-                  Por favor ingrese una descripción detallada (mínimo 50 caracteres)
+                  Por favor ingrese una descripción del proyecto (mínimo 30 caracteres)
                 </div>
+              </div>
+
+              <!-- Preguntas Docentes / Contenido -->
+              <div class="mb-3">
+                <label for="contenido" class="form-label fw-bold">Preguntas Docentes</label>
+                <textarea class="form-control" id="contenido" name="contenido" rows="4" 
+                  placeholder="Preguntas realizadas por los docentes durante la sustentación (opcional)"></textarea>
+                <small class="form-text text-muted">Opcional: Registre las preguntas importantes de la sustentación</small>
               </div>
 
               <!-- Imagen -->
               <div class="mb-3">
-                <label for="imagen" class="form-label fw-bold">Imagen del Proyecto</label>
-                <input type="text" class="form-control" id="imagen" name="imagen" 
-                  placeholder="Ej: 1.png, 2.jpeg (debe estar en /public/img/)">
-                <small class="form-text text-muted">Opcional: Nombre del archivo de imagen (si no se especifica, se usará una imagen por defecto)</small>
+                <label for="imagen" class="form-label fw-bold">Imagen del Proyecto *</label>
+                <input type="file" class="form-control" id="imagen" name="imagen" accept="image/*" required>
+                <small class="form-text text-muted">Formatos permitidos: JPEG, JPG, PNG, GIF, WEBP (Máximo 5MB)</small>
+                <div class="invalid-feedback">
+                  Por favor seleccione una imagen para el proyecto
+                </div>
               </div>
 
               <!-- Destacada -->
@@ -121,7 +131,7 @@
   <!-- Pie de Página -->
   <footer class="bg-dark text-white py-4 mt-5">
     <div class="container text-center">
-      <p class="mb-0">© 2025 Proyectos Integradores - Universidad</p>
+      <p class="mb-0">© 2025 Proyectos Integradores - UPB BGA</p>
       <p class="mb-0 small">Jornada de Sustentaciones Académicas</p>
     </div>
   </footer>

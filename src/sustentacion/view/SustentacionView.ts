@@ -98,7 +98,16 @@ export default class SustentacionView {
 
   readonly postCrearSustentacion = async (req: Request, res: Response) => {
     try {
-      const { nombreGrupo, integrantes, materia, contenido, imagen, destacada } = req.body
+      const { nombreGrupo, integrantes, materia, contenido, descripcion, destacada } = req.body
+      const file = req.file
+      
+      // Validar que se haya subido una imagen
+      if (!file) {
+        return res.status(400).render('error', {
+          message: 'Por favor seleccione una imagen para el proyecto',
+          currentPageName: 'registro'
+        })
+      }
       
       // Convertir integrantes de string a array
       const integrantesArray = typeof integrantes === 'string' 
@@ -106,11 +115,12 @@ export default class SustentacionView {
         : integrantes
       
       const nuevaSustentacion = {
-        imagen: imagen || 'error.png',
+        imagen: file.filename, // Nombre del archivo subido
         nombreGrupo,
         integrantes: integrantesArray,
         materia,
-        contenido,
+        descripcion: descripcion || '',
+        contenido: contenido || '',
         destacada: destacada === 'true' || destacada === true
       }
       

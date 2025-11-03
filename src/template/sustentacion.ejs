@@ -65,15 +65,34 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Descripción del Proyecto -->
-        <div class="card shadow-sm">
-          <div class="card-header bg-success text-white">
+    <!-- Descripción y Preguntas Docentes -->
+    <div class="row mt-4">
+      <!-- Descripción del Proyecto -->
+      <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-info text-white">
             <h4 class="mb-0">Descripción del Proyecto</h4>
           </div>
           <div class="card-body">
             <p class="card-text text-justified">
-              <%= sustentacion.contenido %>
+              <%= sustentacion.descripcion || 'Sin descripción disponible' %>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preguntas Docentes -->
+      <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-success text-white">
+            <h4 class="mb-0">Preguntas Docentes</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text text-justified">
+              <%= sustentacion.contenido || 'Sin preguntas registradas' %>
             </p>
           </div>
         </div>
@@ -96,7 +115,7 @@
   <!-- Pie de Página -->
   <footer class="bg-dark text-white py-4 mt-5">
     <div class="container text-center">
-      <p class="mb-0">© 2025 Proyectos Integradores - Universidad</p>
+      <p class="mb-0">© 2025 Proyectos Integradores - UPB BGA</p>
       <p class="mb-0 small">Jornada de Sustentaciones Académicas</p>
     </div>
   </footer>
