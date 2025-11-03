@@ -2,6 +2,9 @@ import { Request, Response } from 'express'
 
 export default class ErrorView {
   readonly notFound = (_req: Request, res: Response) => {
-    res.status(404).render('error')
+    res.status(404).render('error', {
+      message: 'Página no encontrada',
+      currentPageName: undefined
+    })
   }
 }

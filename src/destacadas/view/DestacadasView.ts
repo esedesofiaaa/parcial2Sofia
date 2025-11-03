@@ -10,7 +10,10 @@ export default class DestacadasView {
       
       res.status(200).render('destacadas', { destacadas, currentPageName: 'destacadas' })
     } catch (error) {
-      res.status(500).render('error', { message: 'Error al cargar sustentaciones destacadas' })
+      res.status(500).render('error', { 
+        message: 'Error al cargar sustentaciones destacadas',
+        currentPageName: 'destacadas'
+      })
     }
   }
 }

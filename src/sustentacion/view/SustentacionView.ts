@@ -11,11 +11,21 @@ export default class SustentacionView {
       
       const allSustentaciones = await this.sustentacionModel.fetchSustentaciones()
       
+      // Calcular total de páginas
+      const totalPages = Math.ceil(allSustentaciones.length / itemsPerPage)
+      
+      // Validar que la página solicitada existe
+      if (page < 1 || page > totalPages) {
+        return res.status(404).render('error', { 
+          message: `Página ${page} no encontrada. Solo hay ${totalPages} página${totalPages !== 1 ? 's' : ''} disponible${totalPages !== 1 ? 's' : ''}.`,
+          currentPageName: 'sustentaciones'
+        })
+      }
+      
       // Paginación
       const startIndex = (page - 1) * itemsPerPage
       const endIndex = startIndex + itemsPerPage
       const sustentaciones = allSustentaciones.slice(startIndex, endIndex)
-      const totalPages = Math.ceil(allSustentaciones.length / itemsPerPage)
       
       res.status(200).render('sustentacionLista', {
         sustentaciones,
@@ -25,7 +35,10 @@ export default class SustentacionView {
         currentPageName: 'sustentaciones'
       })
     } catch (error) {
-      res.status(500).render('error', { message: 'Error al cargar sustentaciones' })
+      res.status(500).render('error', { 
+        message: 'Error al cargar sustentaciones',
+        currentPageName: 'sustentaciones'
+      })
     }
   }
 
@@ -35,12 +48,18 @@ export default class SustentacionView {
       const sustentacion = await this.sustentacionModel.fetchSustentacionById(id)
       
       if (!sustentacion) {
-        return res.status(404).render('error', { message: 'Sustentación no encontrada' })
+        return res.status(404).render('error', { 
+          message: 'Sustentación no encontrada',
+          currentPageName: 'sustentaciones'
+        })
       }
       
       res.status(200).render('sustentacion', { sustentacion, currentPageName: 'sustentaciones' })
     } catch (error) {
-      res.status(500).render('error', { message: 'Error al cargar sustentación' })
+      res.status(500).render('error', { 
+        message: 'Error al cargar sustentación',
+        currentPageName: 'sustentaciones'
+      })
     }
   }
 
@@ -66,7 +85,10 @@ export default class SustentacionView {
         currentPageName: 'sustentaciones'
       })
     } catch (error) {
-      res.status(500).render('error', { message: 'Error en la búsqueda' })
+      res.status(500).render('error', { 
+        message: 'Error en la búsqueda',
+        currentPageName: 'sustentaciones'
+      })
     }
   }
 
@@ -96,7 +118,10 @@ export default class SustentacionView {
       
       res.redirect('/sustentaciones')
     } catch (error) {
-      res.status(500).render('error', { message: 'Error al crear sustentación' })
+      res.status(500).render('error', { 
+        message: 'Error al crear sustentación',
+        currentPageName: 'registro'
+      })
     }
   }
 }
