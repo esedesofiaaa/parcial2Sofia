@@ -21,7 +21,8 @@ export default class SustentacionView {
         sustentaciones,
         currentPage: page,
         totalPages,
-        searchQuery: ''
+        searchQuery: '',
+        currentPageName: 'sustentaciones'
       })
     } catch (error) {
       res.status(500).render('error', { message: 'Error al cargar sustentaciones' })
@@ -37,7 +38,7 @@ export default class SustentacionView {
         return res.status(404).render('error', { message: 'Sustentación no encontrada' })
       }
       
-      res.status(200).render('sustentacion', { sustentacion })
+      res.status(200).render('sustentacion', { sustentacion, currentPageName: 'sustentaciones' })
     } catch (error) {
       res.status(500).render('error', { message: 'Error al cargar sustentación' })
     }
@@ -61,7 +62,8 @@ export default class SustentacionView {
         sustentaciones,
         currentPage: page,
         totalPages,
-        searchQuery: query
+        searchQuery: query,
+        currentPageName: 'sustentaciones'
       })
     } catch (error) {
       res.status(500).render('error', { message: 'Error en la búsqueda' })
@@ -69,7 +71,7 @@ export default class SustentacionView {
   }
 
   readonly getRegistroForm = async (_req: Request, res: Response) => {
-    res.status(200).render('registro')
+    res.status(200).render('registro', { currentPageName: 'registro' })
   }
 
   readonly postCrearSustentacion = async (req: Request, res: Response) => {

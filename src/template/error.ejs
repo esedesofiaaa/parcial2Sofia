@@ -1,35 +1,46 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Product List</title>
+  <title>Error - Proyectos Integradores</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/app.css">
 </head>
 
 <body>
-  <header class="p-2">
-    <h1 class="text-center border border-1 rounded rounded-2 p-3 bg-warning">
-      Product List
-    </h1>
+  <header class="bg-danger text-white p-4">
+    <h1 class="text-center">Error</h1>
+    <p class="text-center mb-0">Algo salió mal</p>
   </header>
 
   <%- include('menu') %>
 
-    <main>
-      <div class="alert alert-danger" role="alert">
-        Error not found!
+  <main class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="alert alert-danger text-center" role="alert">
+          <h4 class="alert-heading">¡Ups!</h4>
+          <p class="mb-0"><%= typeof message !== 'undefined' ? message : 'Página no encontrada' %></p>
+        </div>
+        <div class="text-center mt-4">
+          <button type="button" class="btn btn-danger me-2" onclick="window.history.back()">Volver atrás</button>
+          <a href="/home" class="btn btn-outline-danger">Ir al inicio</a>
+        </div>
       </div>
-      <a type="button" class="btn btn-warning" href="http://localhost:1888/products/v1.0/list">Back</a>
-    </main>
+    </div>
+  </main>
 
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 Proyectos Integradores - Universidad</p>
+    <p class="mb-0">Jornada de Sustentaciones Académicas</p>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

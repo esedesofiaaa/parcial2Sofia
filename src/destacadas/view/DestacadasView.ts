@@ -8,7 +8,7 @@ export default class DestacadasView {
     try {
       const destacadas = await this.sustentacionModel.fetchDestacadas()
       
-      res.status(200).render('destacadas', { destacadas })
+      res.status(200).render('destacadas', { destacadas, currentPageName: 'destacadas' })
     } catch (error) {
       res.status(500).render('error', { message: 'Error al cargar sustentaciones destacadas' })
     }

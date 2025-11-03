@@ -40,7 +40,7 @@ export default class Server {
   }
 
   private readonly routes = (): void => {
-    this.app.use('/', this.homeRouter.router)
+    this.app.use('/home', this.homeRouter.router)
     this.app.use('/sustentaciones', this.sustentacionRouter.router)
     this.app.use('/destacadas', this.destacadasRouter.router)
     this.app.use('/registro', this.registroRouter.router)

@@ -1,0 +1,15 @@
+/* Estilos para la página de Destacadas */
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+.destacadas-img {
+  height: 300px;
+  object-fit: cover;
+}

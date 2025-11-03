@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="/css/sustentaciones.css">
 </head>
 
 <body class="bg-light">
@@ -43,7 +44,7 @@
           <% sustentaciones.forEach(sustentacion => { %>
             <div class="col-md-6 col-lg-4">
               <div class="card h-100 shadow-sm hover-card">
-                <img src="/img/<%= sustentacion.imagen %>" class="card-img-top" alt="<%= sustentacion.nombreGrupo %>" style="height: 200px; object-fit: cover;">
+                <img src="/img/<%= sustentacion.imagen %>" class="card-img-top sustentacion-img-small" alt="<%= sustentacion.nombreGrupo %>">
                 <div class="card-body">
                   <% if (sustentacion.destacada) { %>
                     <span class="badge bg-warning text-dark mb-2">Destacada</span>
@@ -113,16 +114,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-
-  <style>
-    .hover-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .hover-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
-    }
-  </style>
 </body>
 
 </html>
