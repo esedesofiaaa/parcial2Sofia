@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "imagen": "test1.jpeg",
+    "nombreGrupo": "TEST_GROUP_1",
+    "integrantes": [
+      "Estudiante Uno",
+      "Estudiante Dos"
+    ],
+    "materia": "Test Subject",
+    "descripcion": "Descripción de prueba 1",
+    "contenido": "Contenido de prueba 1",
+    "destacada": false
+  },
+  {
+    "id": 2,
+    "imagen": "test2.jpeg",
+    "nombreGrupo": "TEST_GROUP_2",
+    "integrantes": [
+      "Estudiante Tres",
+      "Estudiante Cuatro"
+    ],
+    "materia": "Test Subject",
+    "descripcion": "Descripción de prueba 2",
+    "contenido": "Contenido de prueba 2",
+    "destacada": true
+  },
+  {
+    "id": 3,
+    "imagen": "test3.jpeg",
+    "nombreGrupo": "LANNISTER",
+    "integrantes": [
+      "Test Student"
+    ],
+    "materia": "Test Subject",
+    "descripcion": "Descripción de prueba 3",
+    "contenido": "Contenido de prueba 3",
+    "destacada": true
+  }
+]

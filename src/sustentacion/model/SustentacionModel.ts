@@ -1,17 +1,31 @@
 import Sustentacion from '../types/Sustentacion'
-import sustentaciones from '../../../database/GrupoSustentacion.json'
 import fs from 'fs'
 import path from 'path'
 
 export default class SustentacionModel {
-  private readonly dbPath = path.join(__dirname, '../../../database/GrupoSustentacion.json')
+  private readonly dbPath: string
+
+  constructor(dbPath?: string) {
+    // En producción usa GrupoSustentacion.json, en tests usa el path personalizado
+    this.dbPath = dbPath || path.join(__dirname, '../../../database/GrupoSustentacion.json')
+  }
 
   readonly fetchSustentaciones = async (): Promise<Sustentacion[]> => {
-    const data = sustentaciones as Sustentacion[]
-    if (!data) {
-      throw new Error('No se encontraron sustentaciones')
+    try {
+      const fileContent = fs.readFileSync(this.dbPath, 'utf-8')
+      const data = JSON.parse(fileContent) as Sustentacion[]
+      
+      if (!data || !Array.isArray(data)) {
+        throw new Error('No se encontraron sustentaciones')
+      }
+      
+      return data
+    } catch (error: any) {
+      if (error.code === 'ENOENT') {
+        throw new Error('Archivo de sustentaciones no encontrado')
+      }
+      throw error
     }
-    return data
   }
 
   readonly fetchSustentacionById = async (id: number): Promise<Sustentacion | null> => {
