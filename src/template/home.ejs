@@ -49,58 +49,111 @@
 
     <!-- Agenda de la Jornada -->
     <section class="mb-5">
-      <h2 class="text-center text-primary mb-4">Agenda de la Jornada</h2>
+      <h2 class="text-center text-primary mb-4">Agenda Oficial de la Jornada</h2>
       <div class="row">
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-11 mx-auto">
           <div class="card shadow-sm">
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-hover">
-                  <thead class="table-primary">
-                    <tr>
-                      <th>Horario</th>
-                      <th>Actividad</th>
-                      <th>Descripción</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>8:00 AM - 8:30 AM</td>
-                      <td>Registro e Inauguración</td>
-                      <td>Bienvenida y apertura oficial de la jornada</td>
-                    </tr>
-                    <tr>
-                      <td>8:30 AM - 10:30 AM</td>
-                      <td>Bloque 1: Sustentaciones</td>
-                      <td>Presentación de proyectos de Software y Web</td>
-                    </tr>
-                    <tr>
-                      <td>10:30 AM - 11:00 AM</td>
-                      <td>Coffee Break</td>
-                      <td>Receso y networking</td>
-                    </tr>
-                    <tr>
-                      <td>11:00 AM - 1:00 PM</td>
-                      <td>Bloque 2: Sustentaciones</td>
-                      <td>Proyectos de IA, Data Science y Cloud</td>
-                    </tr>
-                    <tr>
-                      <td>1:00 PM - 2:00 PM</td>
-                      <td>Almuerzo</td>
-                      <td>Receso para almorzar</td>
-                    </tr>
-                    <tr>
-                      <td>2:00 PM - 4:00 PM</td>
-                      <td>Bloque 3: Sustentaciones</td>
-                      <td>Proyectos de IoT, Blockchain y Videojuegos</td>
-                    </tr>
-                    <tr>
-                      <td>4:00 PM - 5:00 PM</td>
-                      <td>Premiación y Clausura</td>
-                      <td>Reconocimiento a los mejores proyectos</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="card-body p-0">
+              <!-- Pestañas de Navegación -->
+              <ul class="nav nav-tabs nav-fill" id="agendaTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="dia1-tab" data-bs-toggle="tab" data-bs-target="#dia1" 
+                    type="button" role="tab" aria-controls="dia1" aria-selected="true">
+                    28 de Octubre
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="dia2-tab" data-bs-toggle="tab" data-bs-target="#dia2" 
+                    type="button" role="tab" aria-controls="dia2" aria-selected="false">
+                    29 de Octubre
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="dia3-tab" data-bs-toggle="tab" data-bs-target="#dia3" 
+                    type="button" role="tab" aria-controls="dia3" aria-selected="false">
+                    30 de Octubre
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Contenido de las Pestañas -->
+              <div class="tab-content p-3" id="agendaTabContent">
+                <!-- Día 1: 28 de Octubre -->
+                <div class="tab-pane fade show active" id="dia1" role="tabpanel" aria-labelledby="dia1-tab">
+                  <div class="text-center mb-3">
+                    <h5 class="text-primary">Jornada del 28 de Octubre de 2025</h5>
+                    <p class="text-muted small mb-2">Agenda oficial de las sustentaciones</p>
+                    <!-- Botón de descarga para móviles -->
+                    <a href="/img/JSPI-28-oct-2025.pdf" download class="btn btn-sm btn-outline-primary d-md-none">
+                      Descargar PDF
+                    </a>
+                  </div>
+                  <!-- Visor PDF -->
+                  <div class="ratio ratio-16x9" style="min-height: 600px;">
+                    <iframe src="/img/JSPI-28-oct-2025.pdf" 
+                      title="Agenda 28 de Octubre 2025"
+                      class="border rounded"
+                      style="height: 700px;">
+                      <p>Su navegador no puede mostrar PDFs. 
+                        <a href="/img/JSPI-28-oct-2025.pdf" download>Descargue el PDF aquí</a>
+                      </p>
+                    </iframe>
+                  </div>
+                </div>
+
+                <!-- Día 2: 29 de Octubre -->
+                <div class="tab-pane fade" id="dia2" role="tabpanel" aria-labelledby="dia2-tab">
+                  <div class="text-center mb-3">
+                    <h5 class="text-primary">Jornada del 29 de Octubre de 2025</h5>
+                    <p class="text-muted small mb-2">Agenda oficial de las sustentaciones</p>
+                    <!-- Botón de descarga para móviles -->
+                    <a href="/img/JSPI-29-oct-2025.pdf" download class="btn btn-sm btn-outline-primary d-md-none">
+                      Descargar PDF
+                    </a>
+                  </div>
+                  <!-- Visor PDF -->
+                  <div class="ratio ratio-16x9" style="min-height: 600px;">
+                    <iframe src="/img/JSPI-29-oct-2025.pdf" 
+                      title="Agenda 29 de Octubre 2025"
+                      class="border rounded"
+                      style="height: 700px;">
+                      <p>Su navegador no puede mostrar PDFs. 
+                        <a href="/img/JSPI-29-oct-2025.pdf" download>Descargue el PDF aquí</a>
+                      </p>
+                    </iframe>
+                  </div>
+                </div>
+
+                <!-- Día 3: 30 de Octubre -->
+                <div class="tab-pane fade" id="dia3" role="tabpanel" aria-labelledby="dia3-tab">
+                  <div class="text-center mb-3">
+                    <h5 class="text-primary">Jornada del 30 de Octubre de 2025</h5>
+                    <p class="text-muted small mb-2">Agenda oficial de las sustentaciones</p>
+                    <!-- Botón de descarga para móviles -->
+                    <a href="/img/JSPI-30-oct-2025.pdf" download class="btn btn-sm btn-outline-primary d-md-none">
+                      Descargar PDF
+                    </a>
+                  </div>
+                  <!-- Visor PDF -->
+                  <div class="ratio ratio-16x9" style="min-height: 600px;">
+                    <iframe src="/img/JSPI-30-oct-2025.pdf" 
+                      title="Agenda 30 de Octubre 2025"
+                      class="border rounded"
+                      style="height: 700px;">
+                      <p>Su navegador no puede mostrar PDFs. 
+                        <a href="/img/JSPI-30-oct-2025.pdf" download>Descargue el PDF aquí</a>
+                      </p>
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Información adicional -->
+              <div class="card-footer bg-light text-center">
+                <small class="text-muted">
+                  <strong>Tip:</strong> Usa los controles del visor para hacer zoom, descargar o imprimir la agenda.
+                  En dispositivos móviles, descarga el PDF para mejor visualización.
+                </small>
               </div>
             </div>
           </div>
@@ -128,7 +181,7 @@
               <div class="display-4 mb-3"></div>
               <h5 class="card-title">Proyectos Destacados</h5>
               <p class="card-text">Descubre los proyectos más relevantes e innovadores</p>
-              <a href="/destacadas" class="btn btn-warning">Ver Destacadas</a>
+              <a href="/sustentaciones/destacadas" class="btn btn-warning">Ver Destacadas</a>
             </div>
           </div>
         </div>
@@ -138,7 +191,7 @@
               <div class="display-4 mb-3"></div>
               <h5 class="card-title">Registrar Proyecto</h5>
               <p class="card-text">¿Tienes un proyecto? Regístralo aquí</p>
-              <a href="/registro" class="btn btn-success">Registrar Ahora</a>
+              <a href="/sustentaciones/registro" class="btn btn-success">Registrar Ahora</a>
             </div>
           </div>
         </div>

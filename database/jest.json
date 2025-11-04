@@ -1,40 +1,642 @@
 [
   {
     "id": 1,
-    "imagen": "test1.jpeg",
-    "nombreGrupo": "TEST_GROUP_1",
+    "imagen": "1.jpeg",
+    "nombreGrupo": "VIZLA",
     "integrantes": [
-      "Estudiante Uno",
-      "Estudiante Dos"
+      "Aguilar Latorre Daniel Felipe",
+      "Bravo Vergara Pablo Antonio",
+      "Gomez Cadena Santiago",
+      "Hernandez Carranza David Ricardo",
+      "Ortiz Vargas Carlos Fernando",
+      "Pico Garcia Andres Felipe"
     ],
-    "materia": "Test Subject",
-    "descripcion": "Descripción de prueba 1",
-    "contenido": "Contenido de prueba 1",
+    "materia": "Proyecto Integrador II",
+    "descripcion": "El equipo Vizla presentó el módulo de usuarios para el juego Nexus Battles IV, sin embargo no tenian producto que sustentara el proyecto y en las conclusiones explicaron el porque no lograron terminarlo",
+    "contenido": "Expusieron solo tres compañeros, hablaron acerca de las notificaciones por correo electrónico, usaron scrum. El docente Briceño pregunto por los pilares de scrum, pregunta también porque no hay producto, a lo que respondieron que por inconvenientes y falta de comunicación",
     "destacada": false
   },
   {
     "id": 2,
-    "imagen": "test2.jpeg",
-    "nombreGrupo": "TEST_GROUP_2",
+    "imagen": "2.jpeg",
+    "nombreGrupo": "ELDAR",
     "integrantes": [
-      "Estudiante Tres",
-      "Estudiante Cuatro"
+      "Espinel Dominguez Pedro Mateo",
+      "Gutierrez Mejia Daniel Felipe",
+      "Moreno Velandia Diego Alejandro",
+      "Rincon Ramirez Lenny Alejandro",
+      "Salcedo Hernandez Brenda Luz",
+      "Suarez Mendoza Diego Alejandro"
     ],
-    "materia": "Test Subject",
-    "descripcion": "Descripción de prueba 2",
-    "contenido": "Contenido de prueba 2",
-    "destacada": true
+    "materia": "Proyecto Integrador II",
+    "descripcion": "El grupo Eldar expuso el módulo de inventario y la interfaz del juego Nexus Battles IV, presentaron evidencia de su producto y explicaron de forma clara las funcionalidades",
+    "contenido": "La profesora Danith preguntó sobre los puntos tan altos de cada sprint con puntos muy altos, pidió que explicaran  como fue el despliegue en CI/CD si no hay GitFlow o ramas, a lo que respondieron que frente a los puntos, si  se les fue la mano y estimaron mal y no hay CI/CD porque no hay commits automatizados. El profesor Lenin hizo apuntes sobre los diagramas, pues no respetaron la sintaxis UML, a lo que respondieron que los diagramas estan en drawio ya que no tenian conocimiento de autocat y recurrieron a la anterior plataforma por facilidad.",
+    "destacada": false
   },
   {
     "id": 3,
-    "imagen": "test3.jpeg",
+    "imagen": "3.jpeg",
+    "nombreGrupo": "KRYZE",
+    "integrantes": [
+      "Blandon Ardila Ruben Santiago",
+      "Carvajal Giraldo Juan Pablo",
+      "Falon Palmezano Jesus David",
+      "Fuentes Patiño Juan David",
+      "Leguizamo Vasquez Jose Daniel",
+      "Rodriguez Forero Camilo Andres"
+    ],
+    "materia": "Proyecto Integrador II",
+    "descripcion": "El grupo Kryze presentó el desarrollo del juego para Nexus Battles IV. Explicaron como funcionan las mecánicas del juego y mostraron evidencia del producto.",
+    "contenido": "que pruebas hacen en el proyecto y como es la protección de datos, fueron preguntas de la profesora Danith, y el profesor Lenin preguntó porqué  son importantes los calculos de efectos aleatorios en el negocio.",
+    "destacada": false
+  },
+  {
+    "id": 4,
+    "imagen": "4.jpeg",
+    "nombreGrupo": "ROOK",
+    "integrantes": [
+      "Benitez Pajaro Juan Eduardo",
+      "Castellanos Rincon Santiago",
+      "Fuentes Romero Luis Alfredo",
+      "Lizarazo Ortiz Karen Nicol Dayanna",
+      "Sanabria Gutierrez William Oswaldo",
+      "Toledo De La Cruz Gian Kieffer"
+    ],
+    "materia": "Proyecto Integrador II",
+    "descripcion": "El grupo Rook expuso los módulos de torneo y subastas del proyecto Nexus Battles IV. Presentaron evidencia del producto y explicaron las funcionalidades de cada módulo.",
+    "contenido": "Con que se entreno el chat bot(herramientas)?Con cuantas capas ?Donde se hizo el entrenamiento? Cuál sería la precisión ?Redes neuronales?Lenin preguntó Lenin  porqué se escogió ese diseño y que hablen sobre la arquitectura.",
+    "destacada": false
+  },
+  {
+    "id": 5,
+    "imagen": "5.jpeg",
+    "nombreGrupo": "WREN",
+    "integrantes": [
+      "Espitia Bueno Julian Alberto",
+      "Florez Julio Jeison Steven",
+      "Hallado Abaunza Raul Santiago",
+      "Nuñez Rincon Sergio Eliecer",
+      "Rodriguez Castro Johan David",
+      "Urqudio Bautista Joseph Camilo"
+    ],
+    "materia": "Proyecto Integrador II",
+    "descripcion": "El grupo Wren presentó la inteligencia artificial para las batallas de Nexus Battles IV. Explicaron el funcionamiento de la IA y pero la evidencia evidencia del producto no fue clara y ni convincente.",
+    "contenido": "Profesora Danith: confusion sobre las gráficas de sprint, es burnt up o down? Profe Lenin: cómo decide la IA a quien atacar?",
+    "destacada": false
+  },
+  {
+    "id": 6,
+    "imagen": "6.jpeg",
+    "nombreGrupo": "ARRYN",
+    "integrantes": [
+      "Juan Camilo Gomez Manotas",
+      "Juan David Monsalve Niño",
+      "Nicolas Rodriguez Acevedo",
+      "Sofia Santis Silva",
+      "Tomas Uribe Sanchez"
+    ],
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Marketplace que centraliza productos de éxito, Alkosto y Falabella en una sola plataforma.",
+    "contenido": "Profesor Lenin: No hay marco conceptual y por eso puede hacer miles de preguntas porque no esta claro. el profesor Briceño: Preguntó por la en general que es el proyecto porque tampoco quedó claro a lo que respondieron explicando quye es un marketplace que centraliza los productos de exito, alkosto y fallabela en una sola plataforma. Preguntó también por la arquitectura y que tecnologías usaron a lo que respondieron que usaron microservicios con nodejs y express, base de datos no relacional mongoDB y front en react. Preguntó por qué no usaron base de datos relacional a lo que respondieron que por la facilidad de escalabilidad y flexibilidad para el tipo de proyecto. Preguntó por qué no usaron docker para los microservicios a lo que respondieron que no tuvieron tiempo de implementarlo.",
+    "destacada": false
+  },
+  {
+    "id": 7,
+    "imagen": "7.jpeg",
+    "nombreGrupo": "BARATHEON",
+    "integrantes": [
+      "Fernando Cancelado Figueroa",
+      "Zarhet Valentina Fuentes Bottia",
+      "Nicolas Garcia Mejia",
+      "Jan Dante Leal Arenas",
+      "Bryan Gonzalo Lizcano Duran"
+    ],
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Plataforma que centraliza información de conciertos y eventos de distintas ciudades de Colombia.",
+    "contenido": "El profesor Briceño preguntó que es CRM y ERP, y el profesor Briceño preguntó por cuántas redes neuronales habian y cuántos nodos. Tuvieron inconvenientes con el video, pero pudieron solventarlo y continuar con la presentación.",
+    "destacada": false
+  },
+  {
+    "id": 8,
+    "imagen": "8.jpeg",
     "nombreGrupo": "LANNISTER",
     "integrantes": [
-      "Test Student"
+      "Samuel Arango Diaz",
+      "Juan Manuel Guerrero Rueda",
+      "Wilson Andres Moreno Velandia",
+      "Nestor Stiven Pabon Florez",
+      "Sergio Alejandro Sanabria Moreno"
     ],
-    "materia": "Test Subject",
-    "descripcion": "Descripción de prueba 3",
-    "contenido": "Contenido de prueba 3",
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Plataforma sobre noticias de diferentes tipos y periódicos integrada con inteligencia artificial para recomendaciones personalizadas.",
+    "contenido": "Recibieron felicitaciones por la ejecución y presentación, estaba bien hecha.",
     "destacada": true
+  },
+  {
+    "id": 9,
+    "imagen": "9.jpeg",
+    "nombreGrupo": "STARK",
+    "integrantes": [
+      "Juan Sebastian Granados Jaimes",
+      "Juan Carlos Niño Osorio",
+      "Leyder Steven Ortiz Jaimes",
+      "Jorge Luis Osorio Silva",
+      "Carlos Alberto Quintero Arias"
+    ],
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Plataforma de noticias sobre trading, precios de monedas y estado de mercados integrada con inteligencia artificial para recomendaciones personalizadas.",
+    "contenido": "",
+    "destacada": false
+  },
+  {
+    "id": 10,
+    "imagen": "10.jpeg",
+    "nombreGrupo": "TARGERYEN",
+    "integrantes": [
+      "Juan Andres Contreras Hernandez",
+      "Karol Nicol Dayanna Lizarazo Ortiz",
+      "Raul Ferney Lozano Navarro",
+      "Maria Angelica Parra Grazt",
+      "Jerson Arley Porras Lozano"
+    ],
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Plataforma que recopila información sobre cursos y permite crear un path personalizado según el tema del que se desea aprender, este path es creado por un modelo de IA.",
+    "contenido": "El profesor Lenin hizo preguntas sobre la arquitectura y el costo de las lambdas y porqué no usar instancias EC2, también sobre la referencia al estudio que corroborara el porqué escogieron esos colores para la plataforma, y también sobre cuántos puntos habían en total en los tres sprints",
+    "destacada": true
+  },
+  {
+    "id": 11,
+    "imagen": "11.jpeg",
+    "nombreGrupo": "TYRELL",
+    "integrantes": [
+      "Daniel Felipe Aguilar Latorre",
+      "Cristian Andres Gomez Jaimes",
+      "Cristian Camilo Plata Rodriguez",
+      "Rober Julian Quintero Oviedo",
+      "Juan Pablo Silva Vasquez"
+    ],
+    "materia": "Proyecto Integrador II",
+    "descripcion": "Plataforma sobre productos de alkosto integrada con IA",
+    "contenido": "Un estudiante hizo un comentario con actitud petulante e imprudente sobre porque solo manejaban productos de una plataforma y no de otras, a lo que uno de los miembros respondio tambien de forma jocosa perdiendo la formalidad de la presentación. El profesor Lenin mostró su molesta por la actitud del estudiante y pidió mantener la formalidad en la presentación.",
+    "destacada": false
+  },
+  {
+    "id": 12,
+    "imagen": "WhatsApp Image 2025-11-02 at 22.18.27-1762139927828-813674903.jpeg",
+    "nombreGrupo": "Equipo 1",
+    "integrantes": [
+      "ANGEL LEONARDO LAGOS SALAMANCA",
+      "XANDER SEBASTIAN PINEDA LARROTA",
+      "JULIAN MATEO SIERRA VARGAS",
+      "SANTIAGO PRADA PINILLA",
+      "ALEXANDER GOMEZ GRAJALES."
+    ],
+    "materia": "Estructura de datos",
+    "descripcion": "El equipo presentó un sistema para gestionar trenes de pasajeros, recorriendo las funciones esenciales como registro de rutas, programación y asignación. Leyeron exageradamente el texto de las diapositivas, lo cual demostro poco dominio de los temas y el proyecto en general.",
+    "contenido": "No hubo marco conceptual y las diapositivas estaban en desorden",
+    "destacada": false
+  },
+  {
+    "id": 13,
+    "imagen": "image-1762262273733-997098655.png",
+    "nombreGrupo": "Equipo 2",
+    "integrantes": [
+      "ALEXANDER GOMEZ GRAJALES",
+      "ALBERT DAVID LOPEZ PINZON",
+      "JHAIDER DAVID ZAMBRANO PARRA"
+    ],
+    "materia": "ESTRUCTURAS DE DATOS",
+    "descripcion": "Mostraron otra variante del sistema de trenes, con cobertura adecuada de los componentes principales.",
+    "contenido": "El docente Lenin cuestionó el uso de Java para una app web, pidiendo justificar criterios técnicos, y se propuso mejorar la planeación y la distribución de tareas para llegar con una demo más pulida.",
+    "destacada": false
+  },
+  {
+    "id": 14,
+    "imagen": "imgnodisponible-1762262582733-803942352.png",
+    "nombreGrupo": "Equipo 3",
+    "integrantes": [
+      "RAFAEL CAMILO MARQUEZ ALMENAREZ",
+      "JORGE ANDRES CARDONA NIÑO",
+      "JUAN JOSE ALBA PALMA"
+    ],
+    "materia": "ESTRUCTURAS DE DATOS",
+    "descripcion": "La exposición fue clara y bien organizada, mostrando funcionalidades y resultados.",
+    "contenido": "Tuvieron feedback sobre incluir conclusiones que cerraran hallazgos y aprendizajes, profundizar en los grafos mencionados y optimizar la presentación de diagramas grandes para hacerlos legibles. ",
+    "destacada": false
+  },
+  {
+    "id": 15,
+    "imagen": "image4-1762262703477-623164377.png",
+    "nombreGrupo": "Equipo 4",
+    "integrantes": [
+      "MARIA CATALINA SANCHEZ SAAVEDRA",
+      "JUAN JOSE GONZALEZ ROSALES"
+    ],
+    "materia": "ESTRUCTURAS DE DATOS",
+    "descripcion": "Sistema de gestion de trenes. Presentaron características básicas del sistema y su flujo general",
+    "contenido": "Los docentes dieron fedback frente a los objetivos especificos, pidiendo profundizar en futuras sustentaciones",
+    "destacada": false
+  },
+  {
+    "id": 16,
+    "imagen": "imgnodisponible-1762262762167-964229660.png",
+    "nombreGrupo": "Equipo 5",
+    "integrantes": [
+      "JUAN DIEGO BOHORQUEZ VARGAS",
+      "JOSE DAVID SERRANO PERTUZ"
+    ],
+    "materia": "ESTRUCTURAS DE DATOS",
+    "descripcion": "No se presentaron en la jornada de sustentaciones",
+    "contenido": "No se presentaron en la jornada de sustentaciones",
+    "destacada": false
+  },
+  {
+    "id": 17,
+    "imagen": "urbanshoes-1762262917297-717192992.png",
+    "nombreGrupo": "URBAN SHOES",
+    "integrantes": [
+      "CARLOS DAVID FIGUEROA ARGUELLO",
+      "GABRIEL MATIAS RODRIGUEZ CASTRO",
+      "JHOSTYN SANTIAGO GUALDRON JAIMES",
+      "JORGE ANDRÉS GONZÁLEZ FIGUEROA",
+      "JUAN PABLO MEDINA MENESES",
+      "LUIS EDUARDO MORALES PALENCIA"
+    ],
+    "materia": "INGENIERÍA DE SOFTWARE",
+    "descripcion": "Presentaron un sistema de inventario para calzado ",
+    "contenido": "El docente Lenin sugirio mejoras en los diagramas y conceptos sobre MVC ya que no expusieron el tema con claridadurbanshoes",
+    "destacada": false
+  },
+  {
+    "id": 18,
+    "imagen": "ranashoes-1762263073852-778014603.png",
+    "nombreGrupo": "RANA SHOES",
+    "integrantes": [
+      "ANDRÉS DANIEL FLOREZ MENDOZA",
+      "ANGY NATALIA MEJIA DELGADO",
+      "CRISTIAN CAMILO CHAPARRO CARVAJAL",
+      "DANIEL FERNANDO HOGUÍN SANCHEZ",
+      "JAVIER ALEXANDER SALAZAR FLOREZ",
+      "SANTIAGO SANABRIA URIBE"
+    ],
+    "materia": "INGENIERÍA DE SOFTWARE",
+    "descripcion": "La propuesta buscó automatizar partes del proceso de fabricación de calzado, enfocándose en el flujo de producción y manejo de piezas. ",
+    "contenido": "Dieron comentarios sobre lo amplio y general de un objetivo, mientras que se resaltaron los diagramas de flujo y secuencia",
+    "destacada": true
+  },
+  {
+    "id": 19,
+    "imagen": "veterinariasos-1762263178557-474836473.png",
+    "nombreGrupo": "VETERINARIA SOS",
+    "integrantes": [
+      "DAVID EDUARDO FLÓREZ DURÁN",
+      "DAVID RICARDO CARVAJAL BARRAGÁN",
+      "JOSÉ DAVID MORA PATIÑO",
+      "JUAN DAVID ORDÓÑEZ FERREIRA",
+      "JUAN DAVID TÉLLEZ GUISA",
+      "JUAN PABLO ARENAS AVENDAÑO",
+      "LIBARDO BRAVO DURAN"
+    ],
+    "materia": "INGENIERÍA DE SOFTWARE",
+    "descripcion": "Compartieron un sistema de agendamiento para clínica veterinaria, con funciones de citas y administración de clientes.",
+    "contenido": "La exposicion y el proyecto recibieron buenas opiniones, sin embargo se les pidio que a la proxima leyeran menos las diapositivas",
+    "destacada": true
+  },
+  {
+    "id": 20,
+    "imagen": "AVITECH-1762263350438-142978263.png",
+    "nombreGrupo": "AVITECH",
+    "integrantes": [
+      "ANDRES F. SANCHEZ PALACIO",
+      "CARLOS F. PIMIENTO FONSECA",
+      "ISABELLA MONTOYA GRANADOS",
+      "JOSE O. PORRAS PRADA",
+      "MELISSA PETERSON CALDERON",
+      "NESTOR GUILLERMO N. LASSO RAMIREZ",
+      "PABLO A. BRAVO VERGARA",
+      "SIMON PEREZ GOMEZ"
+    ],
+    "materia": "INGENIERÍA DE SOFTWARE",
+    "descripcion": "Avitech propuso una app para gestionar una finca, con monitoreo de activos y medición de huevos en galpones",
+    "contenido": "Hubieron criticas sobre los diagramas y el no seguimiento de la sintaxis UML, poco dominio del contenido y actitud poco profesional de algunos exponentes ",
+    "destacada": false
+  },
+  {
+    "id": 21,
+    "imagen": "centrodesarrollosoftware-1762264019174-380396871.png",
+    "nombreGrupo": "CENTRO DE DESARROLLO DE SOFTWARE",
+    "integrantes": [
+      "PINZON CAMACHO ANDRES FELIPE",
+      "GARCIA BERNATE ERICK DAVID",
+      "SAAVEDRA MARTINEZ HANSEL SANTIAGO",
+      "VARGAS PARDO MIGUEL ANGEL",
+      "GUERRA SUAREZ SERGIO IVAN"
+    ],
+    "materia": "proyecto integrador 1",
+    "descripcion": "El centro presentó su proyecto como parte de la jornada del Proyecto Integrador I, describiendo objetivos y entregables previstos",
+    "contenido": "Pocos comentarios ya que la exposcion no explicaba mucho del producto",
+    "destacada": false
+  },
+  {
+    "id": 22,
+    "imagen": "BIOTECNOLOGIÌA-1762264337475-906715474.png",
+    "nombreGrupo": "CENTRO DE BIOTECNOLOGÍA",
+    "integrantes": [
+      "DIAZ CALDERON CAREN JULIETH",
+      "LOPEZ PANESSO IVAN ANDRES",
+      "HERNANDEZ REMOLINA JUAN SEBASTIAN",
+      "ADARME GOMEZ KAREN LISSETH",
+      "VARGAS MARTINEZ MIGUEL JOSE",
+      "NEIRA RAMIREZ SEBASTIAN",
+      "BARRAGAN SANCHEZ SILVIA JULIANA"
+    ],
+    "materia": "proyecto integrador 1",
+    "descripcion": "Compartieron la estructura del proyecto y los componentes clave. ",
+    "contenido": "No hubieron muchas preguntas, ya que fue poca la evidencia del proyecto",
+    "destacada": false
+  },
+  {
+    "id": 23,
+    "imagen": "CENTRO DE ENERGIÌAS RENOVABLES-1762264437462-45068921.png",
+    "nombreGrupo": "CENTRO DE ENERGÍAS RENOVABLES",
+    "integrantes": [
+      "TAPIAS FONSECA ANDERSSON JONEYDER",
+      "SUAREZ SUAREZ CLAUDIA NATALIA",
+      "GONZALEZ ANGULO IVAN MATEO",
+      "ALMEIDA RINCON JOHAN SEBASTIAN",
+      "VILLAMIZAR GOMEZ LEONEL DAVID",
+      "ARENALES PEÑA RONALD EDUARDO"
+    ],
+    "materia": "proyecto integrador 1",
+    "descripcion": "Presentaron una iniciativa sobre energías renovables y su articulación con otros esfuerzos del programa.",
+    "contenido": "Resaltaron detalles de ortografia en la presentacion, tenian puntos poco realistas en cada sprint",
+    "destacada": false
+  },
+  {
+    "id": 24,
+    "imagen": "CENTRO DE AGROINDUSTRIA INTELIGENTE-1762264633728-863849550.png",
+    "nombreGrupo": "CENTRO DE AGROINDUSTRIA INTELIGENTE",
+    "integrantes": [
+      "VALERO QUEVEDO ALEXER MAURICIO",
+      "QUIROGA CUBIDES DANIELA",
+      "LAMUS RUIZ ELIAN CAMILO",
+      "RODRIGUEZ CIFUENTES PAULA ANDREA",
+      "ESPINEL ARANGO SERGIO ANDRES"
+    ],
+    "materia": "proyecto integrador 1",
+    "descripcion": "La propuesta busca optimizar procesos agrícolas con módulos de gestión y enfoque en el productor. ",
+    "contenido": "Se cuestionaron los servicios y sus configuraciones y el despliegue de los mismos",
+    "destacada": false
+  },
+  {
+    "id": 25,
+    "imagen": "CENTRO DE ROBOÌTICA Y AUTOMATIZACIOÌN-1762264769887-681608972.png",
+    "nombreGrupo": "CENTRO DE ROBÓTICA Y AUTOMATIZACIÓN",
+    "integrantes": [
+      "MENESES VEGA DILAN KALETH",
+      "TAMAYO DIAZ ERICK EMANUEL",
+      "LASTRE GUERRERO IVAN FELIPE",
+      "LOAIZA AVILA KEYNNER ANDRES",
+      "MEJIA NIÑO MELANY",
+      "CASTRO RUIZ SAMUEL"
+    ],
+    "materia": "proyecto integrador 1",
+    "descripcion": "El equipo detalló módulos y arquitectura de la propuesta del centro. ",
+    "contenido": "No hubieron muchos comentarios o preguntas debido a la falta de evidencia de proyecto",
+    "destacada": false
+  },
+  {
+    "id": 26,
+    "imagen": "CENTRO DE CIBERSEGURIDAD-1762264854666-864717684.png",
+    "nombreGrupo": "CENTRO DE CIBERSEGURIDAD",
+    "integrantes": [
+      "AYALA MANTILLA ANDRES SANTIAGO",
+      "PORRAS BARAJAS JAIRO ESTEBAN",
+      "SORIA ROJAS JOSE DAVID",
+      "RINCON CEDIEL JUAN DAVID"
+    ],
+    "materia": "proyecto integrador 1",
+    "descripcion": "Exposición centrada en políticas y buenas prácticas de seguridad de la información. Se cubrieron objetivos y alcance general.",
+    "contenido": "No se anotaron observaciones específicas según el registro base consultado.",
+    "destacada": false
+  },
+  {
+    "id": 27,
+    "imagen": "imgnodisponible-1762264925029-486753590.png",
+    "nombreGrupo": "CENTRO DE SOLUCIONES SMART CITIES",
+    "integrantes": [
+      "FERRUCHO CRISTANCHO ALEX SANTIAGO",
+      "CONTRERAS SANCHEZ SERGIO ISMAEL"
+    ],
+    "materia": "proyecto integrador 1",
+    "descripcion": "No pasaron a exponer en la jornada de sustentaciones",
+    "contenido": "No pasaron a exponer en la jornada de sustentaciones",
+    "destacada": false
+  },
+  {
+    "id": 28,
+    "imagen": "ImgK-1762265125122-674344904.png",
+    "nombreGrupo": "ImgK",
+    "integrantes": [
+      "DELGADO PINTO SARA ALEJANDRA"
+    ],
+    "materia": " INTRODUCCIÓN A INGENIERÍA DE SISTEMAS E INFORMÁTICA",
+    "descripcion": "ImgK presentó una herramienta que identifica alimentos a partir de fotografías tomadas por la persona usuaria y estima su aporte calórico. ",
+    "contenido": "Como feedback se propusieron mejoras como ampliar y balancear datos, ajustar hiperparámetros y definir métricas de validación más exigentes.",
+    "destacada": true
+  },
+  {
+    "id": 29,
+    "imagen": "ECO UPB-1762265240302-527415793.png",
+    "nombreGrupo": "ECO UPB",
+    "integrantes": [
+      "CASTELLANOS GARCIA JOSE GABRIEL",
+      "QUINTERO ALVARADO ANDRES SEBASTIAN",
+      "QUINTERO LLANOS ANDRÉS FERNANDO",
+      "VESGA DURAN DAVID SANTIAGO"
+    ],
+    "materia": " INTRODUCCIÓN A INGENIERÍA DE SISTEMAS E INFORMÁTICA",
+    "descripcion": "Se mostró un prototipo que usa IA para clasificar residuos y apoyar el reciclaje en campus. La demo explicó el árbol de decisión, las categorías y posibles integraciones con puntos ecológicos de la universidad. ",
+    "contenido": "Como feedback se propusieron mejoras como ampliar y balancear datos, ajustar hiperparámetros y definir métricas de validación más exigentes.\r\n",
+    "destacada": false
+  },
+  {
+    "id": 30,
+    "imagen": "upbstudy-1762265786048-405564701.png",
+    "nombreGrupo": "UPB Study+",
+    "integrantes": [
+      "GARCIA RINCON JULIAN CAMILO",
+      "PARRA AFANADOR ANGELA DANIELA",
+      "SALGUERO LANDINEZ SAREY NALIETH",
+      "SUAREZ HENAO JESUS DAVID",
+      "SUAREZ MARTINEZ IVANNA GISELL",
+      "SUAREZ SANCHEZ JADER ALDREY"
+    ],
+    "materia": " INTRODUCCIÓN A INGENIERÍA DE SISTEMAS E INFORMÁTICA",
+    "descripcion": "UPB Study+ es una red social académica para compartir apuntes y recursos entre estudiantes. El equipo describió arquitectura, flujos de publicación, mecanismos de curación y moderación, y destacó el marco legal sobre datos y propiedad intelectual. El video ayudó a visualizar el valor de la propuesta.",
+    "contenido": "Feedback respecto al manejo del tiempo y la estructuracion de la diapositva, de resto un buen trabajo",
+    "destacada": true
+  },
+  {
+    "id": 31,
+    "imagen": "Pet Finder-1762265873622-606230078.png",
+    "nombreGrupo": "Pet Finder",
+    "integrantes": [
+      "JAIMES MEDINA ALEX SANTIAGO",
+      "OCHOA QUIROZ ANDRES FELIPE",
+      "OSPINA CAPACHO JAVIER ALBERTO",
+      "VERA ROJAS JUAN DAVID"
+    ],
+    "materia": " INTRODUCCIÓN A INGENIERÍA DE SISTEMAS E INFORMÁTICA",
+    "descripcion": "Pet Finder busca localizar mascotas perdidas mediante reconocimiento visual y geolocalización. Se explicó el algoritmo de similitud, la integración con mapas y el flujo de reportes de la comunidad. Aunque la meta es valiosa, se señaló que aún hay distancia con un producto robusto",
+    "contenido": "Se recomendó respaldar con pruebas controladas, métricas de precisión y un plan de escalamiento, además de comunicar con mayor convicción la propuesta de valor.",
+    "destacada": false
+  },
+  {
+    "id": 32,
+    "imagen": "upbsenas-1762266005937-49371831.png",
+    "nombreGrupo": "UPB Señas",
+    "integrantes": [
+      "RODRIGUEZ GARCIA JUAN SEBASTIAN",
+      "SANTA MARIN DAVID ANDRES",
+      "SARAVIA GARCIA JESUS MANUEL ALEXANDER",
+      "VARGAS PRADILLA NICOLAS"
+    ],
+    "materia": " INTRODUCCIÓN A INGENIERÍA DE SISTEMAS E INFORMÁTICA",
+    "descripcion": "El prototipo traduce gestos del lenguaje de señas al alfabeto común mediante captura en tiempo real y un modelo de reconocimiento. Se mostró la interfaz y la arquitectura mínima",
+    "contenido": "Sugerencia de mejorar oratoria y estructura de la exposición.",
+    "destacada": false
+  },
+  {
+    "id": 33,
+    "imagen": "ElectroMed-1762266140193-994764019.png",
+    "nombreGrupo": "ElectroMed",
+    "integrantes": [
+      "ABELLO JIMENEZ MARIA JOSE",
+      "AFANADOR CARRASCAL ANA GABRIELA",
+      "JAIMES CALA ROGGER SANTIAGO",
+      "MONTAÑEZ VALENZUELA ALEX DANIEL",
+      "REY VASQUEZ JUAN NICOLAS",
+      "TABARES PELAEZ JUAN FELIPE"
+    ],
+    "materia": "proyecto integrador 3",
+    "descripcion": "Sistema para monitorear electrolitos con registro de datos clínicos y alertas ante desequilibrios. Se recorrieron perfiles de usuario, captura de métricas y reglas de notificación.",
+    "contenido": "Se pidieron evidencias de pruebas de aceptación, citar fuentes de imágenes y reforzar marco conceptual y objetivos",
+    "destacada": false
+  },
+  {
+    "id": 34,
+    "imagen": "BlessHealth24:7-1762266603813-669012230.png",
+    "nombreGrupo": "BlessHealth24/7",
+    "integrantes": [
+      "CHAVEZ KING JULIANA",
+      "MANOSALVA ACEROS SANTOS ENMANUEL",
+      "MESA PUERTO SERGIO DAVID",
+      "MUÑOZ ROJAS JUAN DAVID",
+      "NIÑO ARENAS DAVID SANTIAGO"
+    ],
+    "materia": "proyecto integrador 3",
+    "descripcion": "Aplicación móvil para gestionar citas, medicamentos e historias clínicas, con componentes de IA y geolocalización. Se presentaron casos de uso y flujos de atención. ",
+    "contenido": "El profe Lenin hizo comentarios sobre exceso de parla o maquillar la exposicion, y la profe Sandra comentó que este proyecto se parecia mucho al de pi2",
+    "destacada": false
+  },
+  {
+    "id": 35,
+    "imagen": "TONGI-1762266897698-953888253.png",
+    "nombreGrupo": "TONGI",
+    "integrantes": [
+      "VEGA SABINO FERNANDO JAVIER",
+      "CARVAJAL RONDON JUAN DAVID",
+      "RODRIGUEZ CURUBO CHRISTIAN MAURICIO",
+      "MONTERO GUTIERREZ JOSE DANIEL",
+      "PATIÑO PARRA JUAN DAVID"
+    ],
+    "materia": "SISTEMAS DISTRIBUIDOS",
+    "descripcion": "TONGI mostró un traductor con interpretación de voz e imagen en tiempo real y opciones offline. Detallaron la arquitectura y los límites actuales del módulo de traducción.",
+    "contenido": "El profesor Lenin  y Ali dieron feedback sobre los atributos de los diagramas, y sober utilizar mejor el tiempo",
+    "destacada": false
+  },
+  {
+    "id": 36,
+    "imagen": "PicLab-1762267119237-450754305.png",
+    "nombreGrupo": "PicLab",
+    "integrantes": [
+      "DIAZ GOMEZ NELSON"
+    ],
+    "materia": "SISTEMAS DISTRIBUIDOS",
+    "descripcion": "Plataforma de procesamiento distribuido de imágenes con balanceo y tolerancia a fallos para reducir latencias. Se explicaron estrategias de distribución de trabajo, monitoreo y recuperación ante errores. ",
+    "contenido": "El profesor Ali hizo comentarios sobre SOAP ya que el estudiante tenia conocimientos al respecto, pero no supo susentarlo correctamente",
+    "destacada": false
+  },
+  {
+    "id": 37,
+    "imagen": "Histofy-1762267301564-604700460.png",
+    "nombreGrupo": "Histofy",
+    "integrantes": [
+      "CASTRO ORTIZ CAMILO ALFONSO",
+      "GOMEZ BUENO JUAN ANGEL",
+      "MENESES ROJAS ANTONELLA",
+      "TELLEZ SALAZAR VALENTINA",
+      "VILLARREAL VASQUEZ ANGIE LORENA"
+    ],
+    "materia": "proyecto integrador 3",
+    "descripcion": "Histofy gestiona historias clínicas con apoyo de IA para clasificación. Presentaron alcances, flujos de acceso y medidas de seguridad para datos sensibles. ",
+    "contenido": "El profesor Lenin hizo comentarios sobre el mal planteamiento del diagrama de clases, estuvieron cortos de tiempo, y tuvieron que saltar rapido a ls conclusiones",
+    "destacada": false
+  },
+  {
+    "id": 38,
+    "imagen": "MediTraslateAI-1762267880378-740444699.png",
+    "nombreGrupo": "MediTraslateAI",
+    "integrantes": [
+      "GRANADOS MORENO JAVIER MAURICIO",
+      "MARIN DIAZ EDWARD DANIEL",
+      "PRADA LUGO MARCO ANTONIO",
+      "VERA MONTAÑA JIMMY ANDRES",
+      "GALVIS NAVARRO DANIEL FELIPE"
+    ],
+    "materia": "proyecto integrador 3",
+    "descripcion": "Aplicación móvil para unificar y traducir información de historias clínicas. Se revisaron escenarios de uso y el flujo de traducción.",
+    "contenido": "Los docentes hicieron comentarios sobre la poca intencion o animo a la hora de exponer y que solo se dedicaron a leer diapositivas de ultimo minuto",
+    "destacada": false
+  },
+  {
+    "id": 39,
+    "imagen": "PixPar-1762267970761-940414052.png",
+    "nombreGrupo": "PixPar",
+    "integrantes": [
+      "ARDILA BAEZ PATRICIA",
+      "MALDONADO ROJAS SANTIAGO",
+      "PEREZ LUNA KAREN."
+    ],
+    "materia": "SISTEMAS DISTRIBUIDOS",
+    "descripcion": "PixPar abordó el procesamiento de grandes volúmenes de imágenes equilibrando carga entre nodos y coordinando eficientemente. Aunque el producto parece completo,",
+    "contenido": "Se pidió precisión en el lenguaje, aclarar dependencias del diagrama de clases y profundizar en la lectura de métricas. El equipo fue felicitado por su dominio del tema.",
+    "destacada": false
+  },
+  {
+    "id": 40,
+    "imagen": "DistriFile-1762268423984-5876338.png",
+    "nombreGrupo": "DistriFile",
+    "integrantes": [
+      "ROMERO CASTRO MARIA"
+    ],
+    "materia": "SISTEMAS DISTRIBUIDOS",
+    "descripcion": "Sistema de almacenamiento distribuido con replicación en múltiples nodos coordinados por un servidor de aplicación. Se presentó la arquitectura, los mecanismos de consistencia y la estrategia de redundancia.",
+    "contenido": "El profesor Ali dio felicitacines por la exposicion, dominio del tema y sacar el proyecto adelante individualmente",
+    "destacada": true
+  },
+  {
+    "id": 41,
+    "imagen": "Bless Image Plus-1762268784350-56977987.png",
+    "nombreGrupo": "Bless Image Plus",
+    "integrantes": [
+      "CHAVEZ KING JULIANA",
+      "VEGA SABINO FERNANDO J."
+    ],
+    "materia": "SISTEMAS DISTRIBUIDOS",
+    "descripcion": "Bless Image Plus presentó una plataforma de procesamiento inteligente de imágenes con aprendizaje distribuido, orientada a procesamiento por lotes y escalado horizontal. El producto se percibe maduro, con una corrección puntual en un diagrama sobre relaciones entre componentes",
+    "contenido": "Tambien hicieron comentarios sobre el dominio del tema pero falta de claridad a la hora de sustentar el SOAP, pero en terminos generales fue un buen proyecto",
+    "destacada": false
   }
 ]

@@ -1,3 +1,30 @@
+/* Importar tipografía Montserrat desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* Aplicar Montserrat como fuente global */
+* {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
 body {
   background-color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Mejorar legibilidad de títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+/* Estilo para el lead */
+.lead {
+  font-weight: 400;
+}
+
+/* Botones con tipografía mejorada */
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
